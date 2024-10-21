@@ -32,7 +32,7 @@ const Hero = () => {
             Arhab
           </span>
         </h1>
-        <p className="text-sm mt-2">
+        <p className="text-sm mt-2 text-center md:text-start">
           Passionate about creating innovative solutions and transforming ideas
           into functional applications with a focus on clean code and
           user-centric design.
