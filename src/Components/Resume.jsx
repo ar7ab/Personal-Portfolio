@@ -19,26 +19,23 @@ const Resume = () => {
 
   return (
     <div
-      className={`min-h-screen ${
-        darkMode
+      className={`min-h-screen ${darkMode
           ? "bg-dark-background text-dark-primary"
           : "bg-background text-black"
-      }`}
+        }`}
     >
       <Navbar />
       <div
-        className={`resume grid grid-cols-1 md:grid-cols-2 justify-center gap-5 md:gap-10 px-4 md:px-48 relative md:top-32 top-24 font-open-sans w-full ${
-          darkMode
+        className={`resume grid grid-cols-1 md:grid-cols-2 justify-center gap-5 md:gap-10 px-4 md:px-48 relative md:top-32 top-24 font-open-sans w-full ${darkMode
             ? "bg-dark-background text-dark-primary"
             : "bg-background text-black"
-        }`}
+          }`}
       >
         <div
-          className={`experience p-5 ${
-            darkMode
+          className={`experience p-5 ${darkMode
               ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
               : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-          } rounded-xl  transition-all duration-300 ease-linear`}
+            } rounded-xl  transition-all duration-300 ease-linear`}
         >
           <h1 className="text-lg md:text-xl font-semibold mb-3 md:mb-5">
             Experience
@@ -49,9 +46,8 @@ const Resume = () => {
                 Intensive Training Program (ITP)
               </h2>
               <span
-                className={`time-duration text-xs md:text-sm ${
-                  darkMode ? "text-dark-secondary" : "text-secondary"
-                } `}
+                className={`time-duration text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                  } `}
               >
                 Nov 2023 - Mar 2024
               </span>
@@ -63,27 +59,24 @@ const Resume = () => {
               </p>
               <div className="project">
                 <h1 className=" text-sm md:text-lg my-1">Project:</h1>
-                <h1 className="title text-[14px] md:text-sm flex gap-1 md:gap-2 items-center">
+                <h1 className="title text-[13px] md:text-sm flex gap-1 md:gap-2 items-center">
                   E – Commerce Website (MediVital)
                   <a
                     href="https://dev-medivital.pantheonsite.io/"
                     target="_blank"
-                    className={`block border px-2 md:text-sm py-0.5 rounded-full text-xs ${
-                      darkMode ? "text-dark-primary" : "text-secondary"
-                    } ${
-                      darkMode
+                    className={`block border px-2 md:text-sm py-0.5 rounded-full text-xs ${darkMode ? "text-dark-primary" : "text-secondary"
+                      } ${darkMode
                         ? "border-dark-primary hover:border-dark-secondary"
                         : "border-primary hover:border-secondary"
-                    }`}
+                      }`}
                   >
                     Live Demo
                   </a>
                 </h1>
                 <h1>Technologies:</h1>
                 <p
-                  className={`technologies text-xs md:text-sm ${
-                    darkMode ? "text-dark-secondary" : "text-secondary"
-                  }`}
+                  className={`technologies text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                    }`}
                 >
                   HTML, CSS, Js, and WordPress
                 </p>
@@ -94,9 +87,8 @@ const Resume = () => {
                 Embedded System Diploma
               </h2>
               <span
-                className={`time-duration text-xs md:text-sm${
-                  darkMode ? "text-dark-secondary" : "text-secondary"
-                } `}
+                className={`time-duration text-xs md:text-sm${darkMode ? "text-dark-secondary" : "text-secondary"
+                  } `}
               >
                 Oct 2022 - Mar 2023
               </span>
@@ -110,22 +102,19 @@ const Resume = () => {
                   <a
                     href="https://github.com/ar7ab/Electric_water_heater"
                     target="_blank"
-                    className={`block border px-2 md:text-sm py-0.5 rounded-full text-xs ${
-                      darkMode ? "text-dark-primary" : "text-secondary"
-                    } ${
-                      darkMode
+                    className={`block border px-2 md:text-sm py-0.5 rounded-full text-xs ${darkMode ? "text-dark-primary" : "text-secondary"
+                      } ${darkMode
                         ? "border-dark-primary hover:border-dark-secondary"
                         : "border-primary hover:border-secondary"
-                    }`}
+                      }`}
                   >
                     Live Demo
                   </a>
                 </h1>
                 <h1>Technologies:</h1>
                 <p
-                  className={`technologies text-xs md:text-sm ${
-                    darkMode ? "text-dark-secondary" : "text-secondary"
-                  }`}
+                  className={`technologies text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                    }`}
                 >
                   Embedded C, Atmega32
                 </p>
@@ -135,20 +124,18 @@ const Resume = () => {
         </div>
         <div className="education-skills flex flex-col gap-4 md:block">
           <div
-            className={`educatio p-5 ${
-              darkMode
+            className={`educatio p-5 ${darkMode
                 ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                 : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-            } rounded-xl  transition-all duration-300 ease-linear`}
+              } rounded-xl  transition-all duration-300 ease-linear`}
           >
             <h1 className="text-lg md:text-xl font-semibold mb-3 md:mb-5">
               Education & Skills
             </h1>
             <div className="bachelor">Bachelor of Technology</div>
             <span
-              className={`time-duration text-xs md:text-sm ${
-                darkMode ? "text-dark-secondary" : "text-secondary"
-              } `}
+              className={`time-duration text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                } `}
             >
               Sep 2019 - Jul 2023
             </span>
@@ -164,9 +151,8 @@ const Resume = () => {
             <div className="grade">
               Grade:
               <span
-                className={`grade text-xs md:text-sm ${
-                  darkMode ? "text-dark-secondary" : "text-secondary"
-                } `}
+                className={`grade text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                  } `}
               >
                 Excellent (Ranked 9th)
               </span>
@@ -177,9 +163,8 @@ const Resume = () => {
                 </h1>
                 <h1>Technologies:</h1>
                 <p
-                  className={`technologies text-xs md:text-sm ${
-                    darkMode ? "text-dark-secondary" : "text-secondary"
-                  }`}
+                  className={`technologies text-xs md:text-sm ${darkMode ? "text-dark-secondary" : "text-secondary"
+                    }`}
                 >
                   Embedded C, Arduino, App inventor
                 </p>
@@ -189,121 +174,109 @@ const Resume = () => {
           <div className={`skills mt-2 grid grid-cols-2 md:grid-cols-4 gap-2`}>
             {" "}
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img src={HTML5Img} alt="HTML5" />
               <div className="name text-sm">HTML5</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img src={CSS3Img} alt="CSS3" />
               <div className="name text-sm">CSS3</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={JSImg} alt="Js" />
               <div className="name text-sm">JavaScript</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={VsCodeImg} alt="VSCode" />
               <div className="name text-sm">VS Code</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={GitHubImg} alt="GitHub" />
               <div className="name text-sm">GitHub</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={ReactImg} alt="React" />
               <div className="name text-sm">React.js</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={TailwindImg} alt="React" />
               <div className="name text-sm">Tailwind</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={TypeScriptImg} alt="TypeScript" />
               <div className="name text-sm">TypeScript</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-7" src={NPMImg} alt="NPM" />
               <div className="name text-sm">NPM</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={ViteImg} alt="ViteJs" />
               <div className="name text-sm">Vite.js</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={ReduxImg} alt="Redux" />
               <div className="name text-sm">Redux</div>
             </div>
             <div
-              className={`skill flex flex-row gap-2 items-center ${
-                darkMode
+              className={`skill flex flex-row gap-2 items-center ${darkMode
                   ? "bg-[#1E1C21] hover:bg-[#2e2c30c3]"
                   : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-              } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
+                } rounded-xl  transition-all duration-300 ease-linear py-3 px-4`}
             >
               <img className="w-6" src={MUIImg} alt="MUI" />
               <div className="name text-sm">MUI</div>

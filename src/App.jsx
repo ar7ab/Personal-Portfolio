@@ -9,7 +9,7 @@ import Contact from "./Components/Contact.jsx";
 const App = () => {
   return (
     <DarkModeProvider>
-      <Routes basename="/Personal-Portofolio/">
+      <Routes basename="/Personal-Portfolio/">
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
