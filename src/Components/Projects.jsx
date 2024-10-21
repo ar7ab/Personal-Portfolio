@@ -1,49 +1,55 @@
 import Navbar from "./Navbar";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { useContext } from "react";
-import project1Img from "../assets/project-1.png";
-import project2Img from "../assets/project-2.png";
-import project3Img from "../assets/project-3.png";
-import project4Img from "../assets/project-4.png";
+import YT_ProjectImg from "../assets/YouTube_Project.png";
+import ToDo_ListImg from "../assets/ToDo-list-Img.png";
+import PortfolioImg from "../assets/Portfolio_Img.png";
+import project4Img from "../assets/MediVital_Img.png";
 import project5Img from "../assets/project-5.png";
 import project6Img from "../assets/project-6.png";
 
 const projects = [
   {
     id: 1,
-    name: "Pixstock - Stock Media App",
+    name: "YouTube Clone - App",
     Category: "React App",
-    img: project1Img,
+    img: YT_ProjectImg,
+    link: "https://ar7ab.github.io/YouTube-Clone/"
   },
   {
     id: 2,
-    name: "Pixstock - Stock Media App",
+    name: "ToDo List - App",
     Category: "React App",
-    img: project2Img,
+    img: ToDo_ListImg,
+    link: "https://ar7ab.github.io/ToDo-List-App/"
   },
   {
     id: 3,
-    name: "Pixstock - Stock Media App",
+    name: "Personal Portfolio - App",
     Category: "React App",
-    img: project3Img,
+    img: PortfolioImg,
+    link: "https://ar7ab.github.io/Personal-Portfolio/"
   },
   {
     id: 4,
-    name: "Pixstock - Stock Media App",
-    Category: "React App",
+    name: "E – Commerce Website (MediVital) App",
+    Category: "WordPress App",
     img: project4Img,
+    link: "https://dev-medivital.pantheonsite.io/"
   },
   {
     id: 5,
     name: "Pixstock - Stock Media App",
     Category: "React App",
     img: project5Img,
+    link: ""
   },
   {
     id: 6,
     name: "Pixstock - Stock Media App",
     Category: "React App",
     img: project6Img,
+    link: ""
   },
 ];
 
@@ -52,38 +58,34 @@ const Projects = () => {
 
   return (
     <div
-      className={`min-h-screen ${
-        darkMode
-          ? "bg-dark-background text-dark-primary"
-          : "bg-background text-black"
-      } `}
+      className={`min-h-screen ${darkMode
+        ? "bg-dark-background text-dark-primary"
+        : "bg-background text-black"
+        } `}
     >
       <Navbar />
       <div
-        className={`projects grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 px-6 md:px-32  relative py-8 top-20 font-open-sans w-full  ${
-          darkMode
-            ? "bg-dark-background text-dark-primary"
-            : "bg-background text-black"
-        }`}
+        className={`projects grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 px-6 md:px-32  relative py-8 top-20 font-open-sans w-full  ${darkMode
+          ? "bg-dark-background text-dark-primary"
+          : "bg-background text-black"
+          }`}
       >
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`project p-6 ${
-              darkMode
-                ? "bg-[#1E1C21] hover:bg-[#2E2C30]"
-                : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
-            }  flex flex-col justify-center items-center rounded-xl  transition-all duration-300 ease-linear cursor-pointer`}
+            className={`project p-6 ${darkMode
+              ? "bg-[#1E1C21] hover:bg-[#2E2C30]"
+              : "bg-[#F6F0F9] hover:bg-[#E5DFE8]"
+              }  flex flex-col justify-center items-center rounded-xl  transition-all duration-300 ease-linear cursor-pointer`}
           >
-            <a href="#" className="block">
+            <a href={project.link} target="_blank" className="block">
               {" "}
               <div className="project-banner rounded-xl overflow-hidden">
                 <img src={project.img} alt="" className="rounded-xl" />
               </div>
               <div
-                className={`project-category mt-2 ${
-                  darkMode ? "text-dark-secondary" : "text-secondary"
-                }`}
+                className={`project-category mt-2 ${darkMode ? "text-dark-secondary" : "text-secondary"
+                  }`}
               >
                 {project.Category}
               </div>
